@@ -21,9 +21,18 @@ if (argv._.length > 0) {
     config = argv;
 }
 
-pipe({
-    serialPort: argv.serialPort,
-    host: argv.host,
-    port: argv.port,
-    baudRate: argv.baudRate,
-});
+function run() {
+    try {
+        pipe({
+            serialPort: argv.serialPort,
+            host: argv.host,
+            port: argv.port,
+            baudRate: argv.baudRate,
+        });
+    } catch (e) {
+        console.log(e);
+        run();
+    }
+}
+
+run();
