@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+/*
+ * Usage:
+ *  net2serial --serialPort COM5 --host 127.0.0.1 --port 6969 --baudRate 9600
+ **/
+
+var optimist = require('optimist');
+var path = require('path');
+var pipe = require('../lib/pipe-net2serial');
+var argv = optimist.argv;
+var config;
+
+if (argv._.length > 0) {
+    try {
+        config = path.join(process.cwd(), require(argv._[0]));
+    } catch (e) {
+        config = argv;
+    }
+} else {
+    config = argv;
+}
+
+pipe({
+    serialPort: argv.serialPort,
+    host: argv.host,
+    port: argv.port,
+    baudRate: argv.baudRate,
+});

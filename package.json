@@ -1,0 +1,32 @@
+{
+  "name": "node-pipe-net2serial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "net2serial": "bin/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serabass/node-pipe-net2serial.git"
+  },
+  "keywords": [
+    "net",
+    "serial",
+    "pipe"
+  ],
+  "author": "Serabass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serabass/node-pipe-net2serial/issues"
+  },
+  "homepage": "https://github.com/Serabass/node-pipe-net2serial#readme",
+  "dependencies": {
+    "optimist": "^0.6.1",
+    "pipe": "^1.1.0",
+    "serialport": "^2.1.0"
+  }
+}
