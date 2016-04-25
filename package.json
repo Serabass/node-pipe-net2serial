@@ -1,5 +1,5 @@
 {
-  "name": "pipe-net2serial",
+  "name": "node-pipe-net2serial",
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
