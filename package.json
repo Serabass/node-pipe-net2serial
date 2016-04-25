@@ -1,5 +1,5 @@
 {
-  "name": "node-pipe-net2serial",
+  "name": "pipe-net2serial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/Serabass/node-pipe-net2serial#readme",
   "dependencies": {
+    "minimist": "0.0.8",
     "optimist": "^0.6.1",
-    "pipe": "^1.1.0",
     "serialport": "^2.1.0"
   }
 }
